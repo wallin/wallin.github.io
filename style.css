@@ -1,0 +1,188 @@
+/******************************************************************************
+ * Basic styles
+ *****************************************************************************/
+html {
+  background-color: #CACACA;
+  background-image: url(sewa.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% -30px;  
+}
+body {
+  width: 960px;
+  margin: auto;
+  padding: 0;
+  font-family: "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a, a:visited, a:link {
+  color: #888;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: firebrick;
+}
+
+h1, h2, h3 {
+  color: #666;
+  font-weight: normal;
+  display: block;
+}
+
+/******************************************************************************
+ * Top part with intro text
+ *****************************************************************************/
+div.intro {
+  text-indent: -9999px; 
+  display: block;
+  height: 540px;
+}
+
+/******************************************************************************
+ * Second part with my stuff
+ *****************************************************************************/
+div.items {
+  clear: both;
+  margin: 0 0 10px 0;   
+}
+div.items h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+}
+
+/* --- Project boxes --- */
+ div.items ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  clear: both;
+}
+
+div.items ul p {
+  margin-bottom: 0;
+}
+
+div.items ul li {
+  vertical-align: top;
+  display: inline-block;
+  float: left;
+  width: 285px;
+  min-height: 115px;
+  margin: 11px;
+  padding: 10px;
+  background-color: #e5e5e5;
+  font-size: 12px;
+  line-height: 1.3;
+  
+  /* Lets round it a bit for those who use modern browsers */
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;   
+}
+
+div.items ul li.first {
+  margin-left: 0;
+}
+
+div.items ul li.last {
+  margin-right: 0;
+}
+
+
+div.items ul li h3 {
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+div.items ul li a {
+  font-size: 11px;
+}
+
+/* --- Icon --- */
+div.items ul li img {
+  float: right;
+  width: 48px;
+  padding: 2px;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+}
+
+ /* --- Some overrides for the social network boxes --- */
+
+div.social  {
+  margin-bottom: 0;
+}
+div.social ul li {
+  background-color: #AAA;
+  color: #333;
+  min-height: 80px;
+}
+
+div.social ul li a{
+  color: #FFF;
+}
+
+div.social ul li img{
+  border-color: #EEE;
+}
+
+/******************************************************************************
+ * Footer with contact info etc.
+ *****************************************************************************/
+div#footer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #e5e5e5;
+  clear: both;
+  display: block;
+  background-color: #333;
+  height: 2em;
+  padding: 10px;
+  
+  border-top-right-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-top-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;   
+  
+}
+
+div#footer h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #BBB;
+  display: inline-block;
+  float: left;
+}
+div#footer address {
+  color: #BBB;
+  margin-top: 5px;
+  display: inline-block;
+  float: right;
+}
+
+div#footer span.phone {
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 0 5px 0 25px;
+}
+div#footer span.email {
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 0 0 0 25px;
+}
+
+
+
+/******************************************************************************
+ * Orhpan styles
+ *****************************************************************************/
+.clear {
+  clear: both;
+}
