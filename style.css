@@ -140,11 +140,16 @@ div.items ul li a.more {
 /* --- Icon --- */
 div.items ul li img {
   float: right;
-  width: 70px;
+  width: 61px;
   padding: 3px;
   margin: 0 1px 0 5px;
   border: 1px solid #D5D6DD;
   background-color: #FFF;
+  border: solid 5px #fff;
+  -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
+  box-shadow: 0 0 5px #B3B3B3;
+  -moz-box-shadow: 0 0 5px #B3B3B3;
+  -webkit-box-shadow: 0 0 5px #B3B3B3;
 }
 
  /* --- Some overrides for the social network boxes --- */
