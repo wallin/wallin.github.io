@@ -3,15 +3,19 @@
  *****************************************************************************/
 html {
   background-color: #CACACA;
-  background-image: url(sewa.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% -30px;  
+  background-image: url(bg_stripes.png);
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
 }
 body {
-  width: 960px;
-  margin: auto;
-  padding: 0;
-  font-family: "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url(bg_gradient_top.png);
+  background-repeat: repeat-x;
+  background-position: 50% 0;
+  padding: 20px 0 0 0;
+  margin: 0;
+  /*font-family: "Gill Sans", Calibri, "Trebuchet MS", sans-serif;*/
+  font:normal normal 300 100.01%/normal "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif
 }
 
 a, a:visited, a:link {
@@ -30,13 +34,26 @@ h1, h2, h3 {
   display: block;
 }
 
+div.wrapper {
+  background-image: url(sewa.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+    margin: auto;
+    width: 960px;
+    padding: 0;
+}
+
 /******************************************************************************
  * Top part with intro text
  *****************************************************************************/
 div.intro {
-  text-indent: -9999px; 
+  text-indent: -9999px;
   display: block;
   height: 540px;
+}
+
+div.intro * {
+    margin: 0;
 }
 
 /******************************************************************************
@@ -44,16 +61,17 @@ div.intro {
  *****************************************************************************/
 div.items {
   clear: both;
-  margin: 0 0 10px 0;   
+  margin: 0 0 10px 0;
 }
 div.items h2 {
   margin: 0;
   padding: 0;
   font-size: 28px;
+  text-shadow: #e8e9eb 0px 1px 1px;
 }
 
 /* --- Project boxes --- */
- div.items ul {
+div.items ul {
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -61,25 +79,31 @@ div.items h2 {
 }
 
 div.items ul p {
+  margin-top: 7px;
   margin-bottom: 0;
+  margin-right: 90px;
+  color: #797e80;
+  font-size: 13px;
 }
 
 div.items ul li {
+  position: relative;
   vertical-align: top;
   display: inline-block;
   float: left;
-  width: 285px;
-  min-height: 115px;
+  width: 265px;
+  min-height: 117px;
   margin: 11px;
-  padding: 10px;
-  background-color: #e5e5e5;
-  font-size: 12px;
+  padding: 15px 20px;
+
   line-height: 1.3;
-  
+
   /* Lets round it a bit for those who use modern browsers */
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;   
+/*  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;*/
+  background-image: url(bg_item.png);
+  background-repeat: no-repeat;
 }
 
 div.items ul li.first {
@@ -92,7 +116,7 @@ div.items ul li.last {
 
 
 div.items ul li h3 {
-  color: #000;
+  color: #182830;
   font-weight: bold;
   font-size: 18px;
   margin: 0;
@@ -101,13 +125,25 @@ div.items ul li h3 {
 div.items ul li a {
   font-size: 11px;
 }
+div.items ul li a.more {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+  text-indent: -9999px;
+  background-image: url(button_more.png);
+  background-repeat: no-repeat;
+}
 
 /* --- Icon --- */
 div.items ul li img {
   float: right;
-  width: 48px;
-  padding: 2px;
-  border: 1px solid #DDD;
+  width: 70px;
+  padding: 3px;
+  margin: 0 1px 0 5px;
+  border: 1px solid #D5D6DD;
   background-color: #FFF;
 }
 
@@ -117,9 +153,9 @@ div.social  {
   margin-bottom: 0;
 }
 div.social ul li {
-  background-color: #AAA;
   color: #333;
-  min-height: 80px;
+  min-height: 88px;
+  background-image: url(bg_item_small.png);
 }
 
 div.social ul li a{
@@ -139,22 +175,21 @@ div#footer {
   color: #e5e5e5;
   clear: both;
   display: block;
-  background-color: #333;
+  background-color: #2F3537;
   height: 2em;
   padding: 10px;
-  
+
   border-top-right-radius: 3px;
   -moz-border-top-right-radius: 3px;
   -webkit-border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   -moz-border-top-left-radius: 3px;
-  -webkit-border-top-left-radius: 3px;   
-  
+  -webkit-border-top-left-radius: 3px;
+
 }
 
 div#footer h2 {
   font-size: 16px;
-  font-weight: bold;
   margin: 0;
   color: #BBB;
   display: inline-block;
