@@ -92,7 +92,8 @@ div.items ul li {
   display: inline-block;
   float: left;
   width: 265px;
-  min-height: 117px;
+  height: 117px;
+  overflow: hidden;
   margin: 11px;
   padding: 15px 20px;
 
