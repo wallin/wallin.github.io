@@ -3,13 +3,13 @@
  *****************************************************************************/
 html {
   background-color: #CACACA;
-  background-image: url(bg_stripes.png);
+  background-image: url(images/bg_stripes.png);
   background-repeat: repeat;
   padding: 0;
   margin: 0;
 }
 body {
-  background-image: url(bg_gradient_top.png);
+  background-image: url(images/bg_gradient_top.png);
   background-repeat: repeat-x;
   background-position: 50% 0;
   padding: 20px 0 0 0;
@@ -35,7 +35,7 @@ h1, h2, h3 {
 }
 
 div.wrapper {
-  background-image: url(sewa.png);
+  background-image: url(images/sewa.png);
   background-repeat: no-repeat;
   background-position: 50% 0;
     margin: auto;
@@ -103,7 +103,7 @@ div.items ul li {
 /*  border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;*/
-  background-image: url(bg_item.png);
+  background-image: url(images/bg_item.png);
   background-repeat: no-repeat;
 }
 
@@ -134,7 +134,7 @@ div.items ul li a.more {
   width: 80px;
   height: 25px;
   text-indent: -9999px;
-  background-image: url(button_more.png);
+  background-image: url(images/button_more.png);
   background-repeat: no-repeat;
 }
 
@@ -146,7 +146,7 @@ div.items ul li img {
   margin: 0 1px 0 5px;
   background-color: #FFF;
   border: solid 5px #eee;
-  -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
+  -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
   box-shadow: 0 0 5px #B3B3B3;
   -moz-box-shadow: 0 0 5px #B3B3B3;
   -webkit-box-shadow: 0 0 5px #B3B3B3;
@@ -160,7 +160,7 @@ div.social  {
 div.social ul li {
   color: #333;
   min-height: 88px;
-  background-image: url(bg_item_small.png);
+  background-image: url(images/bg_item_small.png);
 }
 
 div.social ul li a{
