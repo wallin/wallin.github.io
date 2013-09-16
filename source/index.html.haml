@@ -1,0 +1,65 @@
+.wrapper
+  .intro
+    %h1 sewa.se
+    %p
+      Hello! I'm Sebastian Wallin, a web developer and tinkerer. Here is some of my stuff.
+  %h2 Web
+  .items
+    %ul
+      %li.first
+        = image_tag 'icon/resjakt.png', alt: 'Resultatjakt'
+        %h3 Resultatjakt
+        %a.more{href: "http://resultatjakt.se/", target: "_new"} http://resultatjakt.se
+        %p The largest top list in Sweden for those who have completed "en svensk klassiker"
+      %li
+        = image_tag 'icon/angular.png', alt: 'Angular JS plugin for Gravatar'
+        %h3 angular-gravatar
+        %a.more{href: "http://wallin.github.io/angular-gravatar/", target: "_new"} http://wallin.github.io/angular-gravatar/
+        %p An Angular JS directive for generating Gravatar images
+      %li.last
+        = image_tag 'icon/growl.png', alt: 'jQuery growl plugin'
+        %h3 jQuery growl plugin
+        %a.more{href: "http://wallin.github.io/jquery-growl/", target: "_new"} http://wallin.github.io/jquery-growl/
+        %p A very lightweight growl-like notification plugin for jQuery.
+  %h2 Electronics
+  .items
+    %ul
+      %li.first
+        = image_tag 'icon/blogger.gif', alt: 'Malen 2010'
+        %h3 Malen 2010
+        %a.more{href: "http://malen2010.blogspot.com/", target: "_new"} http://malen2010.blogspot.com
+        %p A portable and efficient stereo for outdoor use with a built in giant LED VU-meter. Mainly for use at Roskilde festival 2010.
+      %li
+        = image_tag 'icon/tumblr.png', alt: 'Malen 2013'
+        %h3 Malen 2013
+        %a.more{href: "http://malen2013.tumblr.com/", target: "_new"} http://malen2013.tumblr.com/
+        %p An even more portable boomblaster with focus on extreme portablility and high output.
+      %li.last
+        = image_tag 'icon/googlecode.png', alt: 'LEDTicker'
+        %h3 LEDTicker
+        %a.more{href: "http://code.google.com/p/ledticker/", target: "_new"} http://code.google.com/p/ledticker
+        %p Simple library for the Arduino (ATMega328) microcontroller trying to facilitate creating LED patterns.
+  %h2.clear The social networks
+  .items.social
+    %ul
+      %li.first
+        = image_tag 'icon/linkedin.png', alt: 'Linked in'
+        %h3 LinkedIn
+        %a{href: "http://se.linkedin.com/in/sebwal", target: "_new"} http://se.linkedin.com/in/sebwal
+        %p The serious me.
+      %li
+        = image_tag 'icon/lastfm.png', alt: 'Last.fm'
+        %h3 Last.fm
+        %a{href: "http://www.last.fm/user/jimtegel", target: "_new"} http://www.last.fm/user/jimtegel
+        %p All the music I listen to.
+      %li.last
+        = image_tag 'icon/github.png', alt: 'Github'
+        %h3 Github
+        %a{href: "https://github.com/wallin", target: "_new"} https://github.com/wallin
+        %p My stash for all sorts of code
+  #footer
+    %h3 Contact me
+    %address
+      %span.phone tel: +46 - 701 73 99 39
+      %span.email e-mail: &lt;firstname&gt;.&lt;lastname&gt;@gmail.com
+  .clear

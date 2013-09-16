@@ -1,0 +1,222 @@
+@import 'compass';
+@include global-reset;
+
+/******************************************************************************
+ * Basic styles
+ *****************************************************************************/
+html {
+  background-color: #CACACA;
+  background-image: image-url('bg_stripes.png');
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: image-url('bg_gradient_top.png');
+  background-repeat: repeat-x;
+  background-position: 50% 0;
+  padding: 20px 0 0 0;
+  margin: 0;
+  /*font-family: "Gill Sans", Calibri, "Trebuchet MS", sans-serif;*/
+  font:normal normal 300 100.01%/normal "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif
+}
+
+a, a:visited, a:link {
+  color: #888;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: firebrick;
+}
+
+h1, h2, h3 {
+  color: #666;
+  font-weight: normal;
+  display: block;
+  font-family: "Lato","Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+}
+
+div.wrapper {
+  background-image: image-url('sewa.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+    margin: auto;
+    width: 960px;
+    padding: 0;
+}
+
+/******************************************************************************
+ * Top part with intro text
+ *****************************************************************************/
+div.intro {
+  text-indent: -9999px;
+  display: block;
+  height: 540px;
+}
+
+div.intro * {
+    margin: 0;
+}
+
+/******************************************************************************
+ * Second part with my stuff
+ *****************************************************************************/
+div.items {
+  clear: both;
+  margin: 0 0 10px 0;
+}
+div h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  text-shadow: #e8e9eb 0px 1px 1px;
+}
+
+/* --- Project boxes --- */
+div.items ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  clear: both;
+}
+
+div.items ul p {
+  margin-top: 7px;
+  margin-bottom: 0;
+  margin-right: 90px;
+  color: #797e80;
+  font-size: 13px;
+}
+
+div.items ul li {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  float: left;
+  width: 265px;
+  height: 117px;
+  overflow: hidden;
+  margin: 11px;
+  padding: 15px 20px;
+
+  line-height: 1.3;
+
+  @include border-radius(5px);
+  background-image: image-url('bg_item.png');
+  background-repeat: no-repeat;
+}
+
+div.items ul li.first {
+  margin-left: 0;
+}
+
+div.items ul li.last {
+  margin-right: 0;
+}
+
+
+div.items ul li h3 {
+  color: #182830;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+div.items ul li a {
+  font-size: 11px;
+}
+div.items ul li a.more {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+  text-indent: -9999px;
+  background-image: image-url('button_more.png');
+  background-repeat: no-repeat;
+}
+
+/* --- Icon --- */
+div.items ul li img {
+  float: right;
+  width: 61px;
+  padding: 3px;
+  margin: 0 1px 0 5px;
+  background-color: #FFF;
+  border: solid 5px #eee;
+  @include border-radius(5px);
+  @include box-shadow(0 0 5px #B3B3B3)
+}
+
+ /* --- Some overrides for the social network boxes --- */
+
+div.social  {
+  margin-bottom: 0;
+}
+div.social ul li {
+  color: #333;
+  min-height: 88px;
+  background-image: image-url('bg_item_small.png');
+}
+
+div.social ul li a{
+  color: #FFF;
+}
+
+div.social ul li img{
+  border-color: #EEE;
+}
+
+/******************************************************************************
+ * Footer with contact info etc.
+ *****************************************************************************/
+div#footer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #e5e5e5;
+  clear: both;
+  display: block;
+  background-color: #2F3537;
+  height: 2em;
+  padding: 10px;
+
+  @include border-top-right-radius(3px);
+  @include border-top-left-radius(3px);
+}
+
+div#footer h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #BBB;
+  display: inline-block;
+  float: left;
+}
+div#footer address {
+  color: #BBB;
+  margin-top: 5px;
+  display: inline-block;
+  float: right;
+}
+
+div#footer span.phone {
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 0 5px 0 25px;
+}
+div#footer span.email {
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 0 0 0 25px;
+}
+
+
+
+/******************************************************************************
+ * Orhpan styles
+ *****************************************************************************/
+.clear {
+  clear: both;
+}
